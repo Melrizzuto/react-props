@@ -1,22 +1,20 @@
 import style from './Card.module.css';
 
 function Card({ title, image, content, tags, published }) {
-    //se il posts non è pubblicato (è su false) ritorno null
-    if (!published) return null;
 
     // imgs di default se non c'è
     const defaultImage = 'https://placehold.co/600x400';
     const imgSrc = image || defaultImage;
 
-    //assegno i colori
+    // assegno i colori dei tag
     const tagColors = {
         trip: 'info',
         landscape: 'primary',
         lowcost: 'success',
         expansive: 'danger',
     };
-
-    return (
+    // utilizzo l'operatore ternario per la condizione di published
+    return published ? (
         <div className={`card m-1 ${style.card}`}>
             <img src={imgSrc} className={`card-img-top ${style.cardImg}`} alt={title} />
             <div className="card-body">
@@ -24,10 +22,7 @@ function Card({ title, image, content, tags, published }) {
                 <p className="card-text">{content}</p>
                 <div>
                     {tags.map((tag, index) => (
-                        <span
-                            key={index}
-                            className={`badge bg-${tagColors[tag] || 'secondary'} me-2 mb-2`}
-                        >
+                        <span key={index} className={`badge bg-${tagColors[tag] || 'secondary'} me-2 mb-2`}>
                             {tag}
                         </span>
                     ))}
@@ -35,7 +30,7 @@ function Card({ title, image, content, tags, published }) {
                 <a href="#" className={style.cardButton}>Leggi di più</a>
             </div>
         </div>
-    );
+    ) : null;
 }
 
 export default Card;
