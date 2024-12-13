@@ -24,6 +24,12 @@
     object-fit: cover;
 }
 
+/* Stile per le ancore*/
+.aTags {
+    display: block;
+    text-decoration: none;
+}
+
 /* Colore e stile del pulsante */
 .cardButton {
     display: inline-block;

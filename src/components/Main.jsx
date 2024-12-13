@@ -1,15 +1,16 @@
 import Card from "./Card";
-import landscapes from "../data/landscape";
+import landscapes from "../data/posts";
 
 function Main() {
     return (
         <main className="container d-flex flex-wrap justify-content-center p-4 mt-4">
-            {landscapes.map((landscape) => (
+            {landscapes.map((post) => (
                 <Card
-                    key={landscape.id}
-                    title={landscape.title}
-                    description={landscape.description}
-                    img={landscape.img} />
+                    key={post.id}
+                    title={post.title}
+                    description={post.description}
+                    tags={post.tags}
+                    img={post.img} />
             ))}
         </main>
     );
