@@ -39,6 +39,22 @@ const posts = [
         image: "",
         tags: ["trip", "landscape", "lowcost"],
         published: true,
+    },
+    {
+        id: 6,
+        title: "Danimarca",
+        content: "Scopri la magia dei paesaggi danesi, tra coste mozzafiato, colline verdi e architettura affascinante.",
+        image: "/danimarca.jpg",
+        tags: ["trip", "landscape", "expansive"],
+        published: true,
+    },
+    {
+        id: 7,
+        title: "Copenhagen",
+        content: "La capitale della Danimarca, famosa per i suoi canali, il parco divertimenti Tivoli e la statua della Sirenetta.",
+        image: "/copenhagen.jpg",
+        tags: ["trip", "landscape", "expansive"],
+        published: true,
     }
 ];
 
