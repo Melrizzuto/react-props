@@ -1,7 +1,7 @@
 import style from './Card.module.css';
 
 function Card({ title, image, content, tags, published }) {
-    //se il posts non è pubblicato ritorno null
+    //se il posts non è pubblicato (è su false) ritorno null
     if (!published) return null;
 
     // imgs di default se non c'è
@@ -10,10 +10,10 @@ function Card({ title, image, content, tags, published }) {
 
     //assegno i colori
     const tagColors = {
-        trip: 'success',
-        landscape: 'danger',
-        lowcost: 'warning',
-        expansive: 'primary',
+        trip: 'info',
+        landscape: 'primary',
+        lowcost: 'success',
+        expansive: 'danger',
     };
 
     return (
@@ -28,7 +28,7 @@ function Card({ title, image, content, tags, published }) {
                             key={index}
                             className={`badge bg-${tagColors[tag] || 'secondary'} me-2 mb-2`}
                         >
-                            #{tag}
+                            {tag}
                         </span>
                     ))}
                 </div>
