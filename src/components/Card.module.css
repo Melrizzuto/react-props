@@ -16,7 +16,7 @@
 }
 
 .card:hover {
-    rotate: 2deg;
+    rotate: 3deg;
     z-index: 1000;
 }
 
