@@ -1,40 +1,45 @@
 const posts = [
     {
         id: 1,
-        title: "Titolo del Post",
-        image: '',
-        content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
-        tags: ["html", "css"],
+        title: "Danimarca",
+        content: "Scopri la magia dei paesaggi danesi, tra coste mozzafiato, colline verdi e architettura affascinante.",
+        image: "/danimarca.jpg",
+        tags: ["trip", "landscape", "expansive"],
         published: true,
     },
     {
         id: 2,
-        title: "Titolo del Post",
-        image: '',
-        content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
-        tags: ["js", "css"],
+        title: "Copenhagen",
+        content: "La capitale della Danimarca, famosa per i suoi canali, il parco divertimenti Tivoli e la statua della Sirenetta.",
+        image: "/copenhagen.jpg",
+        tags: ["trip", "landscape", "expansive"],
         published: true,
     },
     {
         id: 3,
-        title: "Titolo del Post",
-        image: '',
-        content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
-        tags: ["js", "php"],
+        title: "Aarhus",
+        content: "Una città portuale sulla costa orientale, conosciuta per la sua scena culturale e l'architettura moderna.",
+        image: "/aarhus.jpg",
+        tags: ["trip", "landscape", "lowcost"],
         published: true,
     },
     {
         id: 4,
-        title: "Titolo del Post",
-        image: '',
-        content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
-        tags: ["html"],
+        title: "Aalborg",
+        content: "Una città portuale sulla costa orientale, conosciuta per la sua scena culturale e l'architettura moderna.",
+        image: "",
+        tags: ["trip", "landscape"],
         published: false,
     },
+
+    {
+        id: 5,
+        title: "Odense",
+        content: "Una città portuale sulla costa orientale, conosciuta per la sua scena culturale e l'architettura moderna.",
+        image: "",
+        tags: ["trip", "landscape", "lowcost"],
+        published: true,
+    }
 ];
 
 export default posts;

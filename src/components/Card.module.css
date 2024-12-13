@@ -12,23 +12,19 @@
     justify-content: space-between;
     transition: all 0.5s;
     gap: 20px;
+    position: relative;
 }
 
 .card:hover {
     rotate: 2deg;
+    z-index: 1000;
 }
 
 .cardImg {
-    max-width: 600px;
-    max-height: 400px;
+    aspect-ratio: 16/9;
     object-fit: cover;
 }
 
-/* Stile per le ancore*/
-.aTags {
-    display: block;
-    text-decoration: none;
-}
 
 /* Colore e stile del pulsante */
 .cardButton {
@@ -63,8 +59,7 @@
     }
 
     .cardImg {
-        max-width: 600px;
-        max-height: 400px;
+        aspect-ratio: 16/9;
         object-fit: cover;
     }
 
